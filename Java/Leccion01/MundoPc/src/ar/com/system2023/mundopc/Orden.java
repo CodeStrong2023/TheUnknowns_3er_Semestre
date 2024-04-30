@@ -25,6 +25,15 @@ public class Orden {
         }
     }
     
-    
+     //Metodo: Mostrar orden
+        public void mostrarOrden() {
+                System.out.println("Orden #: " + this.idOrden);
+                System.out.println("Computadoras de la orden #: " + this.idOrden);
+                //usamos un ciclo for con el iterador que comienza desde cero, para comparar cunado nuetro iterador sea menos a this.contadorcomputadora i ++
+                for (int i = 0; i < this.contadorComputadora; i++)
+                {
+                        System.out.println(this.computadora[i]);
+                }
+        }
     
 }
