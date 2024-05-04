@@ -1,15 +1,15 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>290</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Orden&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>442</x><y>280</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Producto&gt;&gt;
 --
-+ contador_ordenes: int &lt;&lt;class variables&gt;&gt;
-- id_orden: int
-- producto: &lt;&lt;producto list&gt;&gt;
+*contador_productos: int &lt;&lt;class variables&gt;&gt;
+-id_producto: int
+-nombre: str
+-precio: float
+-
+*__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>42</x><y>270</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Orden&gt;&gt;
 --
-+ __str__( )</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>290</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Producto&gt;&gt;
---
-+ contador_productos: int &lt;&lt;class variables&gt;&gt;
-- id_producto: int
-- nombre: str
-- precio: float
---
-+ __str__( )</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>340</y><w>210</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;.
-&lt;&lt;aggregates&gt;&gt;</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element></diagram>
+*contador_ordenes: int &lt;&lt;class variables&gt;&gt;
+-id_orden: int
+-producto: &lt;&lt;Producto list&gt;&gt;
+-
+*__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>242</x><y>320</y><w>220</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+&lt;&lt;aggregates&gt;&gt;</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element></diagram>

@@ -35,7 +35,7 @@ print(miClase2.variable_clase2)
 
 MiClase.metodo_estatico()
 MiClase.metodo_clase()
-
-miObjeto1 = MiClase("Variable de instancia")
+miObjeto1 = MiClase("variable de instancia")
 miObjeto1.metodo_clase()
 miObjeto1.metodo_instancia()
+
