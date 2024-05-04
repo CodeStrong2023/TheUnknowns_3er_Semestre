@@ -14,3 +14,20 @@ do{
     conteo++;
 }while(conteo < 3);
 console.log("Fin del ciclo do while");
+
+
+//for
+for(let contando = 0 ; contando < 3; contando++){
+    console.log(contando);
+}
+console.log("Fin del ciclo for")
+
+//palabra reservada break
+
+for(let contando = 0 ; contando <= 10; contando++){
+    if(contando % 2 == 0){
+        console.log(contando); //muestra todos los pares
+        break;
+    }
+}
+console.log("Termina el ciclo al encontrar el primer numero par")
