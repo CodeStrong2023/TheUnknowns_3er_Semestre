@@ -11,3 +11,9 @@ public class TestSobreescritura {
 //      System.out.println("gerente1 = " + gerente1.obtenerDetalles());        
         
     }
+           //POLIMORFISMO: Significa multiples comportamientos, unicamente se visualiza en tiempo de ejecucion
+        public static void imprimir(Empleado empleado){
+                String detalles = empleado.obtenerDetalles();
+                System.out.println("detalles = " + detalles);
+        }
+}
