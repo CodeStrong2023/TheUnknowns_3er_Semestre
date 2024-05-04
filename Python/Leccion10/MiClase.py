@@ -28,3 +28,9 @@ miClase2 = MiClase("esta es otra prueba de variable de instancia")
 print(miClase2.variable_instancia)
 print(miClase2.variable_clase)
 
+MiClase.variable_clase2 = "Valor de variable de clase 2"
+print(MiClase.variable_clase2)
+print(miClase1.variable_clase2)
+print(miClase2.variable_clase2)
+
+MiClase.metodo_estatico()
