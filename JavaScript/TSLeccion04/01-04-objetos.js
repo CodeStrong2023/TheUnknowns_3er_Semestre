@@ -50,3 +50,23 @@ console.log(persona);
 
 //Para eliminar una propiedad:
 delete persona.apellida;
+// Distintas formas de imprimir un objeto
+console.log('Distintas formas de imprimir un objeto: forma 1');
+// Numero 1: la mas sencilla: concatenar cada valor de cada propiedad
+console.log(persona.nombre + ', ' + persona.apellido);
+
+console.log('Distintas formas de imprimir un objeto: forma 2');
+//Numero 2: A traves del ciclo for in
+for(nombrePropiedad in persona){
+    console.log(persona[nombrePropiedad]);
+}
+
+console.log('Distintas formas de imprimir un objeto: forma 3');
+//Numero 3: La funcion Object.values(), regresa el objeto como un arreglo
+let personaArray = Object.values(persona);
+console.log(personaArray);
+
+console.log('Distintas formas de imprimir un objeto: forma 4');
+//Numero 4: Utilizaremos el metodo JSON.stringify (lo convierte en una cadena)
+let personaString = JSON.stringify(persona);
+console.log(personaString);
