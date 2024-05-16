@@ -11,5 +11,11 @@
 /Java/Leccion04/Sobreescritura/nbproject/private/
 /Java/Leccion04/IntanceOff/nbproject/private/
 /Java/Leccion05/ConversionObjetos/nbproject/private/
+<<<<<<< HEAD
 /Java/Leccion05/ClaseObject/nbproject/private/
 /Java/Leccion05/ClasesAbstractas/nbproject/private/
+=======
+/Java/Leccion05/ConversionObjetos/build/
+/Java/Leccion05/ClasesAbstractas/nbproject/private/
+/Java/Leccion05/ClasesAbstractas/build/
+>>>>>>> 572032b44a793a80ec07b2e91ad6f06533608e73
