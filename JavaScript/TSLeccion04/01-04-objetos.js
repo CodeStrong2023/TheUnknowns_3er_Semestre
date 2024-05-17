@@ -70,3 +70,20 @@ console.log('Distintas formas de imprimir un objeto: forma 4');
 //Numero 4: Utilizaremos el metodo JSON.stringify (lo convierte en una cadena)
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
+//get
+console.log("Comenzamos a utilizar el metodo get");
+console.log(persona.nombreEdad);
+
+console.log("comenzamos el metodo get y set para idiomas");
+persona.lang = "en";
+console.log(persona.lang);
+
+function Persona3(nombre,apellido,email){ //Constructor
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.nombreCompleto= function(){
+        return this.nombre+ " "+ this.apellido
+    }
+}
