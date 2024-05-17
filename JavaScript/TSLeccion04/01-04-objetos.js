@@ -127,3 +127,30 @@ let miArreglo2 =[]; //sintaxis recomendada
 let miFuncion1 = new function(){}; // todo despues de new es considerado objeto
 //caso funcion 2
 let miFuncion2 = function(){}; //notacion simplificada y recomendada
+
+
+//Uso de prototype
+Persona3.prototype.telefono = '261838382';
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '549261838382'; 
+
+//Uso de call 
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;
+        //return this.nombre+' '+this.apellido;
+    }
+}    
+let persona5 = {
+    nombre: 'Carlos',
+    apellido: 'Lara'
+    }
+console.log(persona4.nombreCompleto2('Lic.', '549261548987456'));
+console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '549261858556'));
+
+//Método Apply
+let arreglo = ['Ing.', '54926184596247'];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
