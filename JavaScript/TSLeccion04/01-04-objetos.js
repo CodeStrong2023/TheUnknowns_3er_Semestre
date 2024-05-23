@@ -82,6 +82,7 @@ console.log('Distintas formas de imprimir un objeto: forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
 
+<<<<<<< HEAD
 console.log("Comenzamos a utilizar el metodo get");
 console.log(persona.nombreEdad);
 
@@ -95,6 +96,22 @@ function Persona3(nombre, apellido, email){ // constructor
     this.email = email;
     this.nombreCompleto = function(){
         return this.nombre+" "+this.apellido;
+=======
+//get
+console.log("Comenzamos a utilizar el metodo get");
+console.log(persona.nombreEdad);
+
+console.log("comenzamos el metodo get y set para idiomas");
+persona.lang = "en";
+console.log(persona.lang);
+
+function Persona3(nombre,apellido,email){ //Constructor
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.nombreCompleto= function(){
+        return this.nombre+ " "+ this.apellido
+>>>>>>> fe1a645b23c7c9d0be3421f216232b28ae62bcee
     }
 }
 let padre = new Persona3("Leo","Lopez","lopezl@gmail.com");
@@ -138,6 +155,7 @@ let miFuncion1 = new function(){}; // todo despues de new es considerado objeto
 //caso funcion 2
 let miFuncion2 = function(){}; //notacion simplificada y recomendada
 
+<<<<<<< HEAD
 //uso de prototype
 Persona3.prototype.telefono ="2618383832";
 console.log(padre);
@@ -164,3 +182,31 @@ console.log(persona4.nombreCompleto2.call(persona5,"Ing.","5492618585856"));
 //metodo apply
 let arreglo =["Ing.","542618686865"]
 console.log(persona4.nombreCompleto2.apply(persona5,arreglo));
+=======
+
+//Uso de prototype
+Persona3.prototype.telefono = '261838382';
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '549261838382'; 
+
+//Uso de call 
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;
+        //return this.nombre+' '+this.apellido;
+    }
+}    
+let persona5 = {
+    nombre: 'Carlos',
+    apellido: 'Lara'
+    }
+console.log(persona4.nombreCompleto2('Lic.', '549261548987456'));
+console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '549261858556'));
+
+//Método Apply
+let arreglo = ['Ing.', '54926184596247'];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
+>>>>>>> fe1a645b23c7c9d0be3421f216232b28ae62bcee
