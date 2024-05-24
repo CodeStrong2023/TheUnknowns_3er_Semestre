@@ -1,5 +1,5 @@
 # Creamos el menú
-from dominio.Pelicula import Pelicula
+from dominio.Peliculas import Pelicula
 from servicio.catalogo_peliculas import CatalogoPeliculas as cp
 opcion = None
 while opcion != 4:
