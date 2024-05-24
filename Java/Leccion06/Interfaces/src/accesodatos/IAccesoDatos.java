@@ -5,7 +5,7 @@ public interface IAccesoDatos {
     
     //Metodo insertar es abstracto y sin cuerpo
     // CRUD
-    void inserter();
+    void insertar();
     void listar();
     void actualizar();
     void eliminar ();
