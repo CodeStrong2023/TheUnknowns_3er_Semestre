@@ -19,6 +19,16 @@ class Persona{
     set apellido(apellido){
         this._apellido = apellido;
     }
+     //Sobreescritura
+    nombreCompleto(){
+        return super.nombreCompleto()+", "+this._departamento;
+    }
+    //Sobreescribiendo el metodo de la clase padre(Object)
+    toString(){
+        //Se aplica el polimorfismo que significa = multiples formas en tiempo de ejecucion
+        //El metodo que se ejecuta depende si es una referencia de tipo padre o hija
+        return this.nombreCompleto();
+    }
 }
 
 class Empleado extends Persona{ //Clase hija
@@ -34,6 +44,11 @@ class Empleado extends Persona{ //Clase hija
 
     set departamento(departamento){
         this._departamento = departamento;
+    }
+
+     //Sobreescritura
+    nombreCompleto(){
+        return super.nombreCompleto()+", "+this._departamento;
     }
 
 }
@@ -52,4 +67,9 @@ console.log(persona2.nombre)
 
 let empleado1 = new Empleado("Maria", "Gimenez", "Sistemas");
 console.log(empleado1);
-console,log(empleado1.nombre);
+console,log(empleado1.nombreCompleto());
+
+//Metodo to string
+//Object.prototype.toString //Esta es la manera de acceder a atributos y metodos de manera dinamica
+console.log(empleado1.toString());
+console.log(persona1.toString());
