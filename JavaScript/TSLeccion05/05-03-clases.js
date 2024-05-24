@@ -71,4 +71,5 @@ console,log(empleado1.nombreCompleto());
 
 //Metodo to string
 //Object.prototype.toString //Esta es la manera de acceder a atributos y metodos de manera dinamica
+console.log(empleado1.toString());
 console.log(persona1.toString());
