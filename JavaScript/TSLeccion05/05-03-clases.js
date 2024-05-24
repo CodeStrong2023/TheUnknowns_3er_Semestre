@@ -19,6 +19,10 @@ class Persona{
     set apellido(apellido){
         this._apellido = apellido;
     }
+     //Sobreescritura
+    nombreCompleto(){
+        return super.nombreCompleto()+", "+this._departamento;
+    }
 }
 
 class Empleado extends Persona{ //Clase hija
@@ -34,6 +38,11 @@ class Empleado extends Persona{ //Clase hija
 
     set departamento(departamento){
         this._departamento = departamento;
+    }
+
+     //Sobreescritura
+    nombreCompleto(){
+        return super.nombreCompleto()+", "+this._departamento;
     }
 
 }
@@ -52,4 +61,4 @@ console.log(persona2.nombre)
 
 let empleado1 = new Empleado("Maria", "Gimenez", "Sistemas");
 console.log(empleado1);
-console,log(empleado1.nombre);
+console,log(empleado1.nombreCompleto());
