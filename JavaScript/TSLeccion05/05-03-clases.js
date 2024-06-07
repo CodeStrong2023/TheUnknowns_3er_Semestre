@@ -1,10 +1,16 @@
 // let persona3 = new Persona('Carla','Ponce') NO SE PERMITE USAR LA CLASE SI NO ESTA CREADA
 
 
-class Persona{
+class Persona{ //Clase Padre
+
+    static ContadorObjetosPersona = 0; //Atributo estático
+    email = 'Valor default email'; //Atributo NO estático
+    
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        Persona.ContadorObjetosPersona++;
+        console.log('Se incrementa el contador: '+Persona.ContadorObjetosPersona);
     }
     get nombre(){
         return this._nombre;
@@ -87,3 +93,11 @@ Persona.saludar2(persona1);
 
 Empleado.saludar();
 Empleado.saludar2(empleado1);
+
+//console.log(persona1.ContadorObjetosPersona);
+console.log(Persona.ContadorObjetosPersona);
+console.log(Empleado.ContadorObjetosPersona);
+
+console.log(persona1.email);
+console.log(empleado1.email);
+//console.log(Persona.email); No se puede acceder desde la clase
