@@ -21,13 +21,20 @@ class Persona{
     }
      //Sobreescritura
     nombreCompleto(){
-        return super.nombreCompleto()+", "+this._departamento;
+        return this._nombre+" "+this._apellido;
     }
     //Sobreescribiendo el metodo de la clase padre(Object)
     toString(){
         //Se aplica el polimorfismo que significa = multiples formas en tiempo de ejecucion
         //El metodo que se ejecuta depende si es una referencia de tipo padre o hija
         return this.nombreCompleto();
+    }
+    static saludar(){
+        console.log("Saludosdesde este método static");
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre+" "+persona.apellido);
     }
 }
 
@@ -67,9 +74,16 @@ console.log(persona2.nombre)
 
 let empleado1 = new Empleado("Maria", "Gimenez", "Sistemas");
 console.log(empleado1);
-console,log(empleado1.nombreCompleto());
+console.log(empleado1.nombreCompleto());
 
 //Metodo to string
 //Object.prototype.toString //Esta es la manera de acceder a atributos y metodos de manera dinamica
 console.log(empleado1.toString());
 console.log(persona1.toString());
+
+//persona1.saludar(); no se utiliza desde el objeto
+Persona.saludar();
+Persona.saludar2(persona1);
+
+Empleado.saludar();
+Empleado.saludar2(empleado1);
