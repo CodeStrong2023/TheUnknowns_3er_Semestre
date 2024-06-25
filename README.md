@@ -114,6 +114,7 @@ En la siguiente imagen se puede observar la forma de trabajo:
 
  Para más información, ir al link de la wiki: https://github.com/CodeStrong2023/TheUnknowns_3er_Semestre/wiki
 
+Además, durante el cursado realizamos un juego llamado Avatar: La Leyenda de Aang, para el cual se puede ver la explicación del código en su página de la wiki: https://github.com/CodeStrong2023/TheUnknowns_3er_Semestre/wiki/Avatar-%E2%80%90-Juego
   
 
 
