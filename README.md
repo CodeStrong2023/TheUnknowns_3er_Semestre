@@ -5,7 +5,7 @@
 <img src="https://readme-typing-svg.herokuapp.com/?lines=Integrantes+del+grupo+:&center=true&width=360&height=30">
 </p>
 
-![Banner](https://res.cloudinary.com/superfolio/image/upload/v1620689979/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f63362f33332f63322f63363333633230656465383266306530636564376435373064626533613166332e676966_yjuh2s.gif)
+<img src="https://github.com/CodeStrong2023/TheUnknowns_3er_Semestre/blob/Final/photo-collage.png.png?raw=true">
 
 <table>
 <caption> <p align="left">
@@ -27,11 +27,11 @@
 <tr><th scope='row'>Semana 6</th><td> Lautaro Ravanal </td></tr>
 <tr><th scope='row'>Semana 7</th><td> M. Sol Bilyk </td></tr>
 <tr><th scope='row'>Semana 8</th><td> Arturo Riera </td></tr>
-<tr><th scope='row'>Semana 9</th><td> Unknown </td></tr>
+<tr><th scope='row'>Semana 9</th><td> M. Sol Bilyk </td></tr>
 <tr><th scope='row'> MES </th><td align="center"> JUNIO </td></tr>
-<tr><th scope='row'>Semana 10</th><td> Unknown </td></tr>
-<tr><th scope='row'>Semana 11</th><td> Unknown </td></tr>
-<tr><th scope='row'>Semana 12</th><td> Unknown </td></tr>
+<tr><th scope='row'>Semana 10</th><td> Arturo Riera </td></tr>
+<tr><th scope='row'>Semana 11</th><td> Juan Belich </td></tr>
+<tr><th scope='row'>Semana 12</th><td> Lautaro Ravanal </td></tr>
 </tbody>
 </table>
 <br>
@@ -103,12 +103,16 @@ El método Scrum es un marco ágil utilizado para gestionar proyectos y desarrol
 `--> Se realiza al finalizar el mes en cuestión.`
 </p>
 
-`?i=js,html,css`
+<h2>Metodología de Trabajo </h2>
 
-<br>
-<p align="left">
-<img src="https://readme-typing-svg.herokuapp.com/?lines=Pasos+a+seguir:&center=true&width=360&height=30">
-</p>
+La forma de trabajo que se maneja en el grupo consiste en que, cada integrante realiza las tareas que el profesor sube al campus, los dias Lunes corresponden a Laboratorio donde el lenguaje que vemos es Python y Javascript, y los dias Miercoles, la materia Programación donde el lenguaje es Java, en un repositorio propio. 
+Durante la semana se hace la reunión en la plataforma discord, y ahí se acuerda, por sorteo, quien será el scrum master de la semana y el órden de cómo se subirán los videos al repositorio del grupo.  
+
+En la siguiente imagen se puede observar la forma de trabajo:
+
+<img src="https://github.com/CodeStrong2023/TheUnknowns_3er_Semestre/blob/Final/Tabla%20de%20scrum%20master.png?raw=true">
+
+ Para más información, ir al link de la wiki: https://github.com/CodeStrong2023/TheUnknowns_3er_Semestre/wiki
 
   
 
