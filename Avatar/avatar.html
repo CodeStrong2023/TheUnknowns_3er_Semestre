@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>LA LEYENDA DE AANG: AVATAR</title>
+        <!--<link rel="stylesheet" type="text/css" href="css/">-->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!-- <nav>
+            <ul class="reglas" id="reglas">
+                <li> REGLAS DE JUEGO </li>
+                <li> Seleccionar un personaje </li>
+                <li> Cada personaje ataca con un tipo diferente de elemento</li>
+                <li> Los jugadores cuentan con 3 vidas cada uno, el que gane mas veces gana la partida</li>
+                <li> Se selecciona el ataque: PUÑO gana a BARRIDA, PATADA gana a PUÑO y BARRIDA gana a PATADA</li>
+            </ul>
+            <button id="boton-jugar">Jugar</button>
+            <button id="reglas-boton">Reglas</button>
+        </nav> -->
+
+        <h1>AVATAR 🔥💧🌱🌪️</h1> <!--Esto es estatico, NO cambia, el h1 se utiliza una vez-->
+        <ul>
+            <li>
+                <label for="zuko">Zuko</label> <!--Esta etiqueta es para darle un indicador a los usuarios de que están seleccionando-->
+                <input type="radio" name="personaje" id="zuko"/> <!-- name es para agrupar todos los imputs y poder seleccionar-->
+            </li>
+            <li>
+                <label for="katara">Katara</label> <!--El atributo for ayuda a vincular un label con un imput a través del mismo id-->
+                <input type="radio" name="personaje" id="katara"/> <!--Acá van los personajes-->
+            </li>
+            <li>
+                <label for="aang">Aang</label>
+                <input type="radio" name="personaje" id="aang"/> <!--Le damos un atributo id para saber cual es el valor de cada uno-->
+            </li>
+            <li>
+                <label for="toph">Toph</label>
+                <input type="radio" name="personaje" id="toph"/>
+            </li>
+            <br>
+            <button id="boton-personaje">Seleccionar</button> <!-- El botón para seleccionar el personaje-->
+            </section>
+        </ul>
+        <section id="seleccionar-ataque">
+            <h2>Elige tu ataque</h2> <!--Se puede utilizar varias veces-->
+            <p>Tu personaje <span id="personaje-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p> <!--Pero esto debe ser dinamico, necesitamos que cambie-->
+            <p>El personaje <span id="personaje-enemigo"></span> del enemigo tienen <span id="vidas-enemigo">3</span> vidas</p> <!--Con la etiqueta spam vamos a modificar el 3 con JS-->
+            <p>
+                <button id="boton-punio">Punio ✊</button>
+                <button id="boton-patada">Patada 🦶</button>
+                <button id="boton-barrida">Barrida 👣</button>
+            </p>
+        </section>
+
+        <section id="mensajes"> <!--Será un párrafo dinamico-->
+        </section>
+
+        <section id="reiniciar">
+            <button id="boton-reiniciar">Reiniciar</button>
+        </section>
+        <script src="js/avatar.js"></script>
+    </body>
+</html>
